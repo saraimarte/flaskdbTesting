@@ -7,13 +7,19 @@
 </head>
 <body>
     <h1> Log In </h1>
-    <form>
+    <form method = "POST" action = "">
+        {{form.hidden_tag()}}
+        {{form.username}}
+        {{form.password}}
+        {{form.submit}}
+        <!--
         <label> Username </label>
         <input type = "text">
         <label> Password </label>
         <input type = "password">
         <button type = "button"> Login </button>
-    </form>
+        -->
+     </form>
     <a href="{{ url_for('register') }}"> Already have an account? Login</a><br>
 
 </body>
